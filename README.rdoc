@@ -1,3 +1,13 @@
 = LaterJobs
 
+1) First add this gem to the Gemfile of you Customer Application say 'MyApp'
+
+gem 'later_jobs', path: '/Users/kapilt/MyProjects/later_jobs'
+
+2) Run the rails generator command to execute migrations that come along with this gem
+
+rails g later_jobs:install
+
+That's It. You are ready to use customized MultiThreaded Delayed Job
+
 This project rocks and uses MIT-LICENSE.
