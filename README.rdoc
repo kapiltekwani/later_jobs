@@ -10,4 +10,8 @@ rails g later_jobs:install
 
 That's It. You are ready to use customized MultiThreaded Delayed Job
 
+Things to be DONE
+1) Handling repeative execution of Failed Jobs using max_attempts column
+2) TestCases
+
 This project rocks and uses MIT-LICENSE.
