@@ -8,6 +8,12 @@ gem 'later_jobs', path: '/Users/kapilt/MyProjects/later_jobs'
 
 rails g later_jobs:install
 
+3) Start the LaterJob's  Server using one of the following commands
+
+a) rake later_jobs:start_server 
+
+b) rake later_jobs:start_server  NUMBER_OF_WORKERS=3 NUMBER_OF_JOBS_PER_WORKER=2
+
 That's It. You are ready to use customized MultiThreaded Delayed Job
 
 Things to be DONE
