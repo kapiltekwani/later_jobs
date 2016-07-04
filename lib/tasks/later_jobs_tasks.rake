@@ -11,7 +11,7 @@ namespace :later_jobs do
   task :start_server => :environment do
       number_of_workers = ENV['NUMBER_OF_WORKERS'].nil? ? 2 : ENV['NUMBER_OF_WORKERS'].to_i
       number_of_jobs_per_worker = ENV['NUMBER_OF_JOBS_PER_WORKER'].nil? ? 1 : ENV['NUMBER_OF_JOBS_PER_WORKER'].to_i
-      runner = runner = LaterJobs::Runner.new(number_of_workers, number_of_jobs_per_worker)
+      runner = LaterJobs::Runner.new(number_of_workers, number_of_jobs_per_worker)
       runner.execute
    end
 end
